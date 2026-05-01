@@ -1,0 +1,30 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+    - name: infely
+      url-base: https://github.com/infely
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: edf5c0814fd3ea202e43aad2d68fd32e882a518c
+      import: app/west.yml
+    - name: nice-view-battery
+      remote: infely
+      revision: main
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+    - name: nv-gem
+      url: https://github.com/MechboardsLTD/zmk-module
+      revision: nv_gem
+  self:
+    path: config
